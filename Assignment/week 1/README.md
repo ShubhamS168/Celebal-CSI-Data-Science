@@ -1,6 +1,6 @@
 # Triangle Patterns in Python
 
-This repository contains three Python scripts to print different triangle patterns using `*` characters.
+This folder contains three Python scripts to print different triangle patterns using `*` characters.
 
 ## Patterns
 
