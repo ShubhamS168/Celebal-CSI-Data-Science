@@ -1,7 +1,7 @@
-# Singly Linked List Implementation
+# Singly Linked List in Python (OOP Style)
 
 ## Overview
-This project implements a singly linked list data structure in Python using Object-Oriented Programming principles. The implementation includes type hints for better code clarity, proper documentation, and exception handling for edge cases, following Python best practices.
+This project demonstrates a simple implementation of a singly linked list using object-oriented programming principles in Python.
 
 ## Files
 - **linked_list.py**: Contains the implementation of the singly linked list data structure.
@@ -13,7 +13,7 @@ The implementation includes:
 - A `LinkedList` class with the following methods:
   - `add_node(data)`: Adds a new node with the specified integer data to the end of the list.
   - `print_list()`: Prints all elements in the linked list in sequence.
-  - `delete_nth_node(n)`: Deletes the nth node from the list (1-based indexing).
+  - `del_nth_node(n)`: Deletes the nth node from the list (1-based indexing).
 - Exception handling for edge cases:
   - Attempting to delete a node from an empty list.
   - Attempting to delete a node with an invalid index (negative, zero, or out of range).
@@ -112,7 +112,7 @@ Each node in the linked list contains:
 The linked list maintains a reference to the head node and provides methods for common operations:
 - **add_node(data)**: Adds a new node with the given integer data to the end of the list.
 - **print_list()**: Prints all elements in the list, ending with `None` to indicate the list's end.
-- **delete_nth_node(n)**: Deletes the nth node (1-based indexing) and prints the position and value of the deleted node.
+- **del_nth_node(n)**: Deletes the nth node (1-based indexing) and prints the position and value of the deleted node.
 ```
 ┌────────────────┐
 │   LinkedList   │
@@ -121,7 +121,7 @@ The linked list maintains a reference to the head node and provides methods for 
 ├────────────────┤
 │ add_node()     │  <- Add a node at the end
 │ print_list()   │  <- Display all elements
-│ delete_nth_node() │  <- Delete the nth node
+│ del_nth_node() │  <- Delete the nth node
 └────────────────┘
 ```
 
