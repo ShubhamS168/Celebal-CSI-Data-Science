@@ -1,7 +1,8 @@
 # Singly Linked List in Python (OOP Style)
 
 ## Overview
-This project demonstrates a simple implementation of a singly linked list using object-oriented programming principles in Python.
+This project demonstrates a simple implementation of a singly linked list using object-oriented programming principles in Python. The implementation leverages type hints with the `typing` module for clarity and includes exception handling for robust error management.
+
 
 ## Files
 - **linked_list.py**: Contains the implementation of the singly linked list data structure.
@@ -14,6 +15,7 @@ The implementation includes:
   - `add_node(data)`: Adds a new node with the specified integer data to the end of the list.
   - `print_list()`: Prints all elements in the linked list in sequence.
   - `del_nth_node(n)`: Deletes the nth node from the list (1-based indexing).
+- Type hints using `from typing import Optional` to specify that certain variables (e.g., `next` in `Node` and `head` in `LinkedList`) can be either a `Node` or `None`.
 - Exception handling for edge cases:
   - Attempting to delete a node from an empty list.
   - Attempting to delete a node with an invalid index (negative, zero, or out of range).
@@ -86,11 +88,14 @@ python linked_list.py
 ### Example Output
 When you run the program, the output will be similar to:
 ```
-Initial Linked List:
+Initial Linked List: 
 10 -> 20 -> 30 -> 40 -> None
+
+ Deleting node at position 2 with value 20
+
 After deleting 2nd node:
-Deleting node at position 2 with value 20
 10 -> 30 -> 40 -> None
+
 Error: Index 10 out of range
 ```
 
@@ -98,7 +103,7 @@ Error: Index 10 out of range
 ### Node Class
 Each node in the linked list contains:
 - **data**: An integer value stored in the node.
-- **next**: A reference to the next node in the list (or `None` if it is the last node).
+- **next**: A reference to the next node in the list (or `None` if it is the last node), annotated with `Optional[Node]` from the `typing` module.
 ```
 ┌─────────────┐
 │    Node     │
@@ -125,6 +130,6 @@ The linked list maintains a reference to the head node and provides methods for 
 └────────────────┘
 ```
 
-The implementation uses type hints from the `typing` module for clarity and includes exception handling:
+The implementation uses type hints with `from typing import Optional` to enhance code clarity by specifying that `head` and `next` can be `None`. It also includes exception handling:
 - Raises an `Exception` when attempting to delete from an empty list.
 - Raises an `IndexError` for invalid indices (negative, zero, or out of range).
