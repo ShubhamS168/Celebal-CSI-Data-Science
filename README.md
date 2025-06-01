@@ -16,6 +16,9 @@ Each folder or file in this repository corresponds to a specific weekly assignme
  ┃ ┣ 📜 lower_triangle.py
  ┃ ┣ 📜 pyramid.py
  ┃ ┗ 📜 README.md
+ ┣ 📂 Week 2/
+ ┃ ┣ 📜 linked_list.py  
+ ┃ ┗ 📜 README.md  
 ```
 
 ---
@@ -30,6 +33,26 @@ This assignment covers:
 
 Each pattern accepts dynamic user input, includes error handling, and is logged for traceability.
 
+
+---
+### Week 2: Singly Linked List in Python (OOP Style)  
+This assignment covers:  
+- Implementation of a singly linked list using classes  
+- Node creation, addition, deletion, and display  
+- Type hinting using Python's `typing` module  
+- Robust exception handling for edge cases  
+
+#### Key Features:
+- `Node` and `LinkedList` classes  
+- `add_node(data)`, `print_list()`, and `del_nth_node(n)` methods  
+- Visual explanation through diagrams  
+- Input validation and meaningful error messages  
+
+🛠 To run:
+```bash
+cd Celebal-CSI-Data-Science/Assignment/week\ 2
+python linked_list.py
+```
 ---
 
 ## ⚙️ Features
