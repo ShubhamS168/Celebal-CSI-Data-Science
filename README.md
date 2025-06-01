@@ -1,12 +1,13 @@
 # 🔍 CSI Weekly Assignments Repository
 
-Welcome to the **CSI (Celebal Summer Internship) Weekly Assignments** repository! This space is dedicated to hosting weekly tasks, projects, and assignments assigned as part of CSI activities.
+Welcome to the **CSI (Celebal Summer Internship)** Weekly Assignments repository!  
+This repository contains weekly tasks and programming exercises aimed at developing strong problem-solving and coding skills.
 
 ---
 
 ## 📁 Repository Structure
 
-Each folder or file in this repository corresponds to a specific weekly assignment. Assignments include Python programs, pattern problems, algorithm implementations, and more.
+Assignments are organized by week. Each folder contains the Python scripts and a `README.md` documenting the task.
 
 ### Example Structure:
 ```
@@ -23,72 +24,91 @@ Each folder or file in this repository corresponds to a specific weekly assignme
 
 ---
 
-## 📌 Current Week
+## 📌 Weekly Assignments
 
-### Week 1: Triangle Pattern Assignment
-This assignment covers:
-- Upper Triangle Pattern
-- Lower Triangle Pattern
-- Pyramid Pattern
+### 🗓️ Week 1: Triangle Pattern Generator
 
-Each pattern accepts dynamic user input, includes error handling, and is logged for traceability.
+**Objective:**  
+Implement three different triangle pattern generators that take dynamic user input.
 
+**Included Patterns:**
+- 🔼 Upper Triangle
+- 🔽 Lower Triangle
+- 🔺 Pyramid
+
+**Features:**
+- Accepts user-defined height/size
+- Clear console outputs for patterns
+- Input validation and error handling
+- Logs pattern output for verification or debugging
+
+**To Run:**
+```bash
+cd Celebal-CSI-Data-Science/Assignment/week\ 1
+python upper_triangle.py
+```
 
 ---
-### Week 2: Singly Linked List in Python (OOP Style)  
-This assignment covers:  
-- Implementation of a singly linked list using classes  
-- Node creation, addition, deletion, and display  
-- Type hinting using Python's `typing` module  
-- Robust exception handling for edge cases  
 
-#### Key Features:
-- `Node` and `LinkedList` classes  
-- `add_node(data)`, `print_list()`, and `del_nth_node(n)` methods  
-- Visual explanation through diagrams  
-- Input validation and meaningful error messages  
+### 🗓️ Week 2: Singly Linked List (Object-Oriented)
 
-🛠 To run:
+**Objective:**  
+Create a basic implementation of a singly linked list using object-oriented programming in Python.
+
+**Features:**
+- Class-based design with `Node` and `LinkedList` classes
+- Core methods:
+  - `add_node(data)`
+  - `print_list()`
+  - `del_nth_node(n)`
+- Uses Python `typing.Optional` for type hinting
+- Strong input validation and exception handling
+- Visual explanation with comments and ASCII diagrams
+
+**To Run:**
 ```bash
 cd Celebal-CSI-Data-Science/Assignment/week\ 2
 python linked_list.py
 ```
+
 ---
 
-## ⚙️ Features
+## ⚙️ Highlights
 
-- 🧠 Logical coding problems
-- ✅ Input validation & exception handling
-- 📌 Weekly updates and uploads
+- 🧠 Logical and structured problem-solving
+- 🧪 Input validation and defensive programming
+- 🔁 Weekly assignment-based workflow
+- 📝 Clean, readable code with documentation
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repository:
+1. **Clone the repository**
 ```bash
 git clone https://github.com/ShubhamS168/Celebal-CSI-Data-Science.git
-
 ```
 
-2. Navigate to a week's folder:
+2. **Navigate to a specific week**
 ```bash
 cd Celebal-CSI-Data-Science/Assignment/week\ 1
-
 ```
 
-3. Run any Python script:
+3. **Run any Python file**
 ```bash
-python upper_triangle.py
+python pyramid.py
 ```
 
 ---
 
 ## 📬 Contact
 
-For queries or contributions, feel free to reach out:
-- 📧 Email: shubhamsourav475@gmail.com
+For any queries, feedback, or collaboration, feel free to connect:
+
+📧 **Email:** [shubhamsourav475@gmail.com](mailto:shubhamsourav475@gmail.com)
 
 ---
 
-> This repository is maintained for educational purposes as part of CSI weekly tasks.
+
+> 📝 **Note:**  
+> This repository is maintained as part of the CSI (Celebal Summer Internship) program and is intended for educational use.
