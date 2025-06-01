@@ -1,6 +1,5 @@
 from typing import Optional
 
-
 class Node:
     """
     A class to represent a single node in a singly linked list.
@@ -76,6 +75,7 @@ class LinkedList:
         current.next = current.next.next
 
 
+
 if __name__ == "__main__":
     ll = LinkedList()
     
@@ -98,4 +98,3 @@ if __name__ == "__main__":
         ll.del_nth_node(10)
     except Exception as e:
         print("\nError:", e)
-
