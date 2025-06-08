@@ -24,7 +24,15 @@ Assignment/
     ├── ipl2024_visualizations.py
     └── visualizations/
 ```
+| File                          | Purpose                                                                |
+|-------------------------------|------------------------------------------------------------------------|
+| `ipl_2024.csv`                | Raw dataset from Kaggle                                                |
+| `cleaning_dataset.ipynb`      | Notebook to clean data and extract structured metrics                  |
+| `IPL_cleaned_2024.csv`        | Output dataset after preprocessing                                     |
+| `ipl2024_visualizations.py`   | Python script that loads cleaned data and generates plots              |
+| `visualizations/`             | Directory that stores all `.png` visual outputs                        |
 
+---
 ---
 
 ## 🧹 Data Cleaning Pipeline
@@ -149,12 +157,18 @@ Shows top 3 six hitters in each team based on total sixes.
 
 ## ▶️ Running the Project
 
+### 1. Install Required Libraries
 ```bash
 pip install pandas matplotlib seaborn
+```
+
+### 2. Execute the Visualization Script
+Navigate to the folder containing `ipl2024_visualizations.py` and run:
+```bash
 python ipl2024_visualizations.py
 ```
 
-Ensure `IPL_cleaned_2024.csv` is present in the same directory.
+Ensure `IPL_cleaned_2024.csv` is in the same directory. All outputs will be saved inside the `visualizations/` folder.
 
 ---
 
@@ -165,6 +179,15 @@ Ensure `IPL_cleaned_2024.csv` is present in the same directory.
 - Pandas
 - Matplotlib
 - Seaborn
+- OS & AST libraries (used for file path & JSON parsing)
+
+---
+
+## 🎯 Key Learnings
+
+- How to clean nested and inconsistent real-world cricket data
+- Visual storytelling using aggregated metrics
+- Efficient use of groupby, filtering, and visualization 
 
 ---
 
