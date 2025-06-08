@@ -1,5 +1,8 @@
 # 🏏 IPL 2024 Dataset – Data Cleaning & Visual Analytics
 
+**Prepared by:** Shubham Sourav  
+**Module:** Week 3 – Data Analysis Assignment
+
 ---
 
 ## 📘 Overview
@@ -55,47 +58,69 @@ The script `ipl2024_visualizations.py` generates insights categorized below. All
 
 ### 🔹 Batsman-Centric Visuals
 
-| Output File                            | Description                                                |
-|----------------------------------------|------------------------------------------------------------|
-| **`top_10_Six_hitter.png`**                | Top 10 players with the most sixes                         |
-| **`top_strike_rate_players.png`**          | Players with highest average strike rate                   |
-| **`top_strike_rate_players_Runs_above_200.png`** | Best strike rates among players with >200 runs       |
-| **`rcb_players_strike_rate.png`**          | Strike rate comparison within Royal Challengers Bangalore  |
+**`top_10_Six_hitter.png`**  
+Top 10 players with the most sixes  
+![Top Six Hitters](visualizations/top_10_Six_hitter.png)
+
+**`top_strike_rate_players.png`**  
+Players with highest average strike rate  
+![Top Strike Rate Players](visualizations/top_strike_rate_players.png)
+
+**`top_strike_rate_players_Runs_above_200.png`**  
+Best strike rates among players with >200 runs  
+![Strike Rate Over 200 Runs](visualizations/top_strike_rate_players_Runs_above_200.png)
+
+**`rcb_players_strike_rate.png`**  
+Strike rate comparison within Royal Challengers Bangalore  
+![RCB Strike Rate](visualizations/rcb_players_strike_rate.png)
 
 ---
 
 ### 🔹 Team Performance Visuals
 
-| Output File                            | Description                                                |
-|----------------------------------------|------------------------------------------------------------|
-| **`team_strike_rate_comparison.png`**      | Average strike rate per team                               |
-| **`team_fours_sixes.png`**                 | Total boundaries (fours + sixes) per team                  |
-| **`wickets_lost_powerplay.png`**           | Most wickets lost by teams during powerplay                |
-| **`runs_scored_in_powerplay_teamwise.png`**| Most runs scored by teams in powerplay overs               |
+**`team_strike_rate_comparison.png`**  
+Average strike rate per team  
+![Team Strike Rate](visualizations/team_strike_rate_comparison.png)
 
-#### Sample Output:  
-![Most Runs Scored in Powerplay](visualizations/runs_scored_in_powerplay.png)
+**`team_fours_sixes.png`**  
+Total boundaries (fours + sixes) per team  
+![Team Boundaries](visualizations/team_fours_sixes.png)
+
+**`wickets_lost_powerplay.png`**  
+Most wickets lost by teams during powerplay  
+![Wickets Lost Powerplay](visualizations/wickets_lost_powerplay.png)
+
+**`runs_scored_in_powerplay_teamwise.png`**  
+Most runs scored by teams in powerplay overs  
+![Runs in Powerplay](visualizations/runs_scored_in_powerplay_teamwise.png)
 
 ---
 
 ### 🔹 Venue & Feature Correlation
 
-| Output File                            | Description                                                |
-|----------------------------------------|------------------------------------------------------------|
-| **`avg_runs_by_venue.png`**                | Average runs scored across IPL venues                      |
-| **`correlation_heatmap.png`**              | Correlation between key numeric features                   |
-| **`pairplot_batting_features.png`**        | Pairplot showing relation among runs, boundaries, strike rate |
+**`avg_runs_by_venue.png`**  
+Average runs scored across IPL venues  
+![Average Runs by Venue](visualizations/avg_runs_by_venue.png)
+
+**`correlation_heatmap.png`**  
+Correlation between key numeric features  
+![Correlation Heatmap](visualizations/correlation_heatmap.png)
+
+**`pairplot_batting_features.png`**  
+Pairplot showing relation among runs, boundaries, strike rate  
+![Pairplot Batting Features](visualizations/pairplot_batting_features.png)
 
 ---
 
 ### 🔹 Player Comparisons
 
-| Output File                            | Description                                                |
-|----------------------------------------|------------------------------------------------------------|
-| **`avg_fours_sixes_per_player.png`**       | Top 10 players by average number of boundaries             |
-| **`top_Six_hitters_teamwise.png`**         | Top 3 six hitters per team                                 |
+**`avg_fours_sixes_per_player.png`**  
+Top 10 players by average number of boundaries  
+![Average Fours and Sixes](visualizations/avg_fours_sixes_per_player.png)
 
-All plots are stored as `.png` images for further inclusion in reports, dashboards, or presentations.
+**`top_Six_hitters_teamwise.png`**  
+Top 3 six hitters per team  
+![Top Six Hitters by Team](visualizations/top_Six_hitters_teamwise.png)
 
 ---
 
@@ -138,6 +163,5 @@ Ensure `IPL_cleaned_2024.csv` is in the same directory. All outputs will be save
 
 ## 📬 Credits
 
-- Dataset: [IPL 2024 Dataset on Kaggle](#) *(https://www.kaggle.com/datasets/rajsengo/indian-premier-league-ipl-all-seasons)*
+- Dataset: [IPL 2024 Dataset on Kaggle](https://www.kaggle.com/datasets/rajsengo/indian-premier-league-ipl-all-seasons)
 - Author: **Shubham Sourav**
-
