@@ -1,8 +1,5 @@
 # 🏏 IPL 2024 Dataset – Data Cleaning & Visual Analytics
 
-**Prepared by:** Shubham Sourav  
-**Module:** Week 3 – Data Analysis Assignment
-
 ---
 
 ## 📘 Overview
