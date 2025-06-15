@@ -40,20 +40,35 @@ Assignment/
 
 ### ✅ Top Player & Team Insights
 
-1. **Top 10 Six Hitters**  
-   Bar chart showing players with the highest number of sixes.
+### 1. Top 10 Six Hitters
+**File:** `top_10_Six_hitter.png`  
+Bar chart showing players with the highest number of sixes.
 
-2. **Top 10 Four Hitters**  
-   Bar chart showing players with the most fours in the season.
+![1. Top Six Hitters](visualizations/top_10_Six_hitter.png)
 
-3. **Strike Rate Distribution of Top 10 Run Scorers**  
-   Boxplot comparing the strike rate variance for top run-getters.
+### 2. Top 10 Four Hitters
+**File:** `top_10_four_hitters.png`  
+Bar chart showing players with the most fours in the season.
 
-4. **Powerplay Average Runs by Team (0–6 Overs)**  
-   Bar chart of maximum runs scored in powerplay overs, by team.
+![2. Top Four Hitters](visualizations/top_10_four_hitters.png)
 
-5. **Powerplay Average Wickets Lost by Team (0–6 Overs)**  
-   Bar chart showing team-wise powerplay wicket losses.
+### 3. Strike Rate Distribution of Top 10 Run Scorers
+**File:** `strike_rate_dist_top_10_run_scorers.png`  
+Boxplot comparing the strike rate variance for top run-getters.
+
+![3. Strike Rate Distribution of Top 10 Run Scorers](visualizations/strike_rate_dist_top_10_run_scorers.png)
+
+### 4. Powerplay Average Runs by Team (0–6 Overs)
+**File:** `powerplay_avg_runs.png`  
+Bar chart of maximum runs scored in powerplay overs, by team.
+
+![4. Powerplay Average Runs by Team (0–6 Overs)](visualizations/powerplay_avg_runs.png)
+
+### 4. Powerplay Average Wickets Lost by Team (0–6 Overs)
+**File:** `powerplay_avg_wickets.png`  
+Bar chart showing team-wise powerplay wicket losses.
+
+![5. Powerplay Average Wickets Lost by Team (0–6 Overs)](visualizations/powerplay_avg_wickets.png)
 
 ---
 
@@ -68,20 +83,12 @@ Assignment/
 
 ## ▶️ How to Run
 
-### 1. Clone this repo or download the files
-
-```bash
-git clone <your-repo-url>
-cd Assignment/Week 4/
-```
-
-### 2. Install Required Libraries
-
+### 1. Install Required Libraries
 ```bash
 pip install pandas matplotlib seaborn
 ```
 
-### 3. Run the Notebook
+### 2. Run the Notebook
 
 Open the Jupyter Notebook:
 
@@ -99,6 +106,10 @@ All plots will be saved in the `visualizations/` folder.
 
 ---
 
+Ensure `IPL_cleaned_2024.csv` is in the same directory. All outputs will be saved inside the `visualizations/` folder.
+
+---
+
 ## 🛠 Tech Stack
 
 - Python 3.x
@@ -107,12 +118,22 @@ All plots will be saved in the `visualizations/` folder.
 - Seaborn
 - Jupyter Notebook
 
+
+
 ---
 
-## 📬 Author
+## 🎯 Key Learnings
 
-**Shubham Sourav**  
-*B.Tech Data Science | Exploratory Data Analyst | Python & Cricket Enthusiast*
+- End-to-End EDA Workflow Mastery
+- Insightful Visual Storytelling with Python
+- Statistical Thinking in Sports Analytics
+
+---
+
+## 📬 Credits
+
+- Dataset: [IPL 2024 Dataset on Kaggle](https://www.kaggle.com/datasets/rajsengo/indian-premier-league-ipl-all-seasons)
+- Author: **Shubham Sourav**
 
 ---
 
