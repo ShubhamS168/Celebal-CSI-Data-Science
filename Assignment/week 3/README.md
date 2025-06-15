@@ -163,9 +163,9 @@ pip install pandas matplotlib seaborn
 ```
 
 ### 2. Execute the Visualization Script
-Navigate to the folder containing `ipl2024_visualizations.py` and run:
+Navigate to the folder containing `ipl_2024_eda.py` and run:
 ```bash
-python ipl2024_visualizations.py
+python ipl_2024_eda.py
 ```
 
 Ensure `IPL_cleaned_2024.csv` is in the same directory. All outputs will be saved inside the `visualizations/` folder.
