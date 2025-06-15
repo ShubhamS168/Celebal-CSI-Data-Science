@@ -28,6 +28,12 @@ Celebal-CSI-Data-Science/Assignment/
  ┃ ┣ ipl2024_visualizations.py
  ┃ ┣ visualizations/
  ┃ ┗ README.md
+ ┣ Week 4/
+ ┃ ┣ IPL_2024_EDA.ipynb 
+ ┃ ┣ IPL_cleaned_2024.csv
+ ┃ ┣ ipl_2024_eda.py
+ ┃ ┣ visualizations/
+ ┃ ┗ README.md
 ```
 
 ---
@@ -102,6 +108,31 @@ Analyze and visualize IPL 2024 player-wise match data using Python’s data scie
 ```bash
 cd Celebal-CSI-Data-Science/Assignment/week\ 3
 python ipl2024_visualizations.py
+```
+
+---
+
+### 🗓️ Week 3: IPL 2024 – Exploratory Data Analysis (EDA) 
+
+**Objective:**  
+Perform in-depth EDA on IPL 2024 dataset to uncover patterns, relationships, and hidden insights in player and team performances.
+
+**Features:**
+- Cleaned dataset (`IPL_cleaned_2024.csv`) used for visual analysis
+- Exploratory insights using histograms, boxplots, scatter plots, correlation maps, and pairplots
+- 10 advanced visualizations saved inside the `visualizations/` folder
+
+**Topics Covered:**
+- Distribution of numeric features
+- Relationship between runs and balls faced
+- Team-level average strike rate
+- Correlation between batting features
+- Multivariate pairwise relationships among player metrics
+
+**To Run:**
+```bash
+cd Celebal-CSI-Data-Science/Assignment/week\ 4
+python ipl_2024_eda.py
 ```
 
 ---
