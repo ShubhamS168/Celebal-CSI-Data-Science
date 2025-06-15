@@ -41,10 +41,10 @@ Assignment/
 ### ✅ Top Player & Team Insights
 
 ### 1. Top 10 Six Hitters
-**File:** `top_10_six_hitter.png`  
+**File:** `top_10_six_hitters.png`  
 Bar chart showing players with the highest number of sixes.
 
-![1. Top Six Hitters](visualizations/top_10_six_hitter.png)
+![1. Top Six Hitters](visualizations/top_10_six_hitters.png)
 
 ### 2. Top 10 Four Hitters
 **File:** `top_10_four_hitters.png`  
