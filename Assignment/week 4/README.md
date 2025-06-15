@@ -46,11 +46,15 @@ Bar chart showing players with the highest number of sixes.
 
 ![1. Top Six Hitters](visualizations/top_10_six_hitters.png)
 
+---
+
 ### 2. Top 10 Four Hitters
 **File:** `top_10_four_hitters.png`  
 Bar chart showing players with the most fours in the season.
 
 ![2. Top Four Hitters](visualizations/top_10_four_hitters.png)
+
+---
 
 ### 3. Strike Rate Distribution of Top 10 Run Scorers
 **File:** `strike_rate_dist_top_10_run_scorers.png`  
@@ -58,17 +62,61 @@ Boxplot comparing the strike rate variance for top run-getters.
 
 ![3. Strike Rate Distribution of Top 10 Run Scorers](visualizations/strike_rate_dist_top_10_run_scorers.png)
 
+---
+
 ### 4. Powerplay Average Runs by Team (0–6 Overs)
 **File:** `powerplay_avg_runs.png`  
 Bar chart of maximum runs scored in powerplay overs, by team.
 
 ![4. Powerplay Average Runs by Team (0–6 Overs)](visualizations/powerplay_avg_runs.png)
 
+---
+
 ### 4. Powerplay Average Wickets Lost by Team (0–6 Overs)
 **File:** `powerplay_avg_wickets.png`  
 Bar chart showing team-wise powerplay wicket losses.
 
 ![5. Powerplay Average Wickets Lost by Team (0–6 Overs)](visualizations/powerplay_avg_wickets.png)
+
+---
+
+### 6. Histogram of Numeric Features  
+**File:** `histograms_numeric_features.png`  
+Histogram plots for key numeric columns like runs, balls faced, and strike rate.
+
+![6. Histogram of Numeric Features](visualizations/histograms_numeric_features.png)
+
+---
+
+### 7. Runs vs Balls Faced  
+**File:** `runs_vs_balls.png`  
+Scatter plot visualizing the relationship between runs scored and balls faced by players.
+
+![7. Runs vs Balls Faced](visualizations/runs_vs_balls.png)
+
+---
+
+### 8. Team-wise Average Strike Rate  
+**File:** `team_avg_strike_rate.png`  
+Bar chart comparing the average strike rate of each team throughout the season.
+
+![8. Team-wise Average Strike Rate](visualizations/team_avg_strike_rate.png)
+
+---
+
+### 9. Correlation Heatmap  
+**File:** `correlation_heatmap.png`  
+Heatmap showing the correlation between different numeric features like runs, balls, boundaries, etc.
+
+![9. Correlation Heatmap](visualizations/correlation_heatmap.png)
+
+---
+
+### 10. Pairplot of Batting Features  
+**File:** `pairplot_batting_features.png`  
+Pairplot illustrating relationships between key batting metrics like runs, balls faced, strike rate, and boundaries.
+
+![10. Pairplot of Batting Features](visualizations/pairplot_batting_features.png)
 
 ---
 
