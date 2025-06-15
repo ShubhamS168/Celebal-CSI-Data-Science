@@ -112,7 +112,7 @@ python ipl2024_visualizations.py
 
 ---
 
-### 🗓️ Week 3: IPL 2024 – Exploratory Data Analysis (EDA) 
+### 🗓️ Week 4: IPL 2024 – Exploratory Data Analysis (EDA) 
 
 **Objective:**  
 Perform in-depth EDA on IPL 2024 dataset to uncover patterns, relationships, and hidden insights in player and team performances.
