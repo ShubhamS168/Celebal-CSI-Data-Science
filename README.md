@@ -165,8 +165,13 @@ python pyramid.py
 
 ---
 
+## ✍️ Author
+
+**Shubham Sourav**  
+*Data Science Enthusiast | Python Developer*
+
+---
 ## 📬 Contact
-- Author: **Shubham Sourav**
 
 For any queries, feedback, or collaboration, feel free to connect:
 
