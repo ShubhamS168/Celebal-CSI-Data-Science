@@ -166,6 +166,7 @@ python pyramid.py
 ---
 
 ## 📬 Contact
+- Author: **Shubham Sourav**
 
 For any queries, feedback, or collaboration, feel free to connect:
 
