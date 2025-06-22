@@ -203,7 +203,6 @@ python pyramid.py
 
 **Shubham Sourav**  
 *Data Science Intern at Celebal Technologies*
-*Data Science Enthusiast | Python Developer| Regression Modeling Enthusiast | ML Developer*
 
 ---
 ## 📬 Contact
