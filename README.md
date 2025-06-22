@@ -34,6 +34,13 @@ Celebal-CSI-Data-Science/Assignment/
  ┃ ┣ ipl_2024_eda.py
  ┃ ┣ visualizations/
  ┃ ┗ README.md
+ ┣ Week 5/
+ ┃ ┣ house_price_predictions.ipynb
+ ┃ ┣ house_price_predictions.csv
+ ┃ ┣ requirements.txt
+ ┃ ┣ data/
+ ┃ ┣ visualizations/
+ ┃ ┗ README.md
 ```
 
 ---
@@ -134,6 +141,33 @@ Perform in-depth EDA on IPL 2024 dataset to uncover patterns, relationships, and
 cd Celebal-CSI-Data-Science/Assignment/week\ 4
 python ipl_2024_eda.py
 ```
+---
+
+### 🗓️ Week 5: House Price Prediction – Data Preprocessing & Feature Engineering
+
+**Objective:**  
+Build a regression model that predicts housing prices using the Ames Housing dataset. This includes complete data preprocessing, feature engineering, and applying multiple regression techniques.
+
+**Features:**
+- Uses Kaggle’s Ames Housing dataset (`train.csv`, `test.csv`)
+- Built models: Linear, Ridge, Lasso, Random Forest, XGBoost, SVR, KNN
+- Engineered features like `TotalSF`, `AgeOfHouse`, `QualityIndex`
+- Output predictions saved as `house_price_predictions.csv`
+- Evaluated with RMSE, MAE, and R² metrics
+
+**Topics Covered:**
+- EDA with histograms, boxplots, scatter plots  
+- Correlation heatmap to identify key numeric relationships  
+- Sale Price trends by Living Area & Quality   
+- Missing value handling and encoding techniques  
+- Feature importance ranked via Random Forest 
+
+
+**To Run:**
+```bash
+cd Celebal-CSI-Data-Science/Assignment/week\\ 5
+jupyter notebook house_price_predictions.ipynb
+```
 
 ---
 
@@ -168,7 +202,8 @@ python pyramid.py
 ## ✍️ Author
 
 **Shubham Sourav**  
-*Data Science Enthusiast | Python Developer*
+*Data Science Intern at Celebal Technologies*
+*Data Science Enthusiast | Python Developer| Regression Modeling Enthusiast | ML Developer*
 
 ---
 ## 📬 Contact
