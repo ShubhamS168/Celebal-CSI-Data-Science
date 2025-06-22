@@ -26,6 +26,7 @@ Assignment/
     ├── house_price_predictions.ipynb   ✅ Main notebook with preprocessing & modeling
     ├── house_price_predictions.csv     ✅ Final predictions generated from the model
     ├── visualizations/                 ✅ Folder storing EDA and feature plots
+    ├── requirements.txt                ✅ Required Python packages
     └── README.md                       ✅ This file
 ```
 
@@ -37,6 +38,7 @@ Assignment/
 | `sample_submission.csv`      | Kaggle format to validate submission structure                         |
 | `house_price_predictions.ipynb` | Jupyter notebook with full pipeline: EDA → preprocessing → modeling  |
 | `house_price_predictions.csv` | Model predictions ready for submission                                |
+| `requirements.txt` | Required Python packages                                |
 | `visualizations/`            | Directory for saved charts and plots                                   |
 
 ---
