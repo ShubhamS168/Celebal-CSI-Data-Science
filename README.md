@@ -171,6 +171,38 @@ jupyter notebook house_price_predictions.ipynb
 
 ---
 
+### 📊 Week 6: Model Evaluation and Hyperparameter Tuning – Student Performance Classification
+
+**Objective:**  
+Train multiple machine learning models and evaluate their performance using metrics such as accuracy, precision, recall, and F1-score. Implement hyperparameter tuning techniques like GridSearchCV and RandomizedSearchCV to optimize model parameters.
+
+**Features:**
+
+- UCI Student Performance dataset (649 samples, 30+ features)
+- Classification into 4 performance categories based on final grade (G3)
+- Built models: Logistic Regression, Decision Tree, Random Forest, SVM, KNN, XGBoost, Naive Bayes
+- Evaluation metrics: Accuracy, Precision, Recall, F1-Score
+- Visualizations: Correlation heatmap, G3 distribution, performance bar chart, confusion matrices
+- Hyperparameter tuning with RandomizedSearchCV
+- Outputs stored in /outputs: .csv files, .pkl models, visual charts
+
+**Topics Covered:**
+
+- Label engineering and train-test split
+- Model training with 5-fold cross-validation
+- Model comparison on held-out test set
+- Hyperparameter tuning for top models
+- Visual and tabular analysis of model performance 
+
+
+**To Run:**
+```bash
+cd Celebal-CSI-Data-Science/Assignment/Week\ 6
+python main.py
+```
+
+---
+
 ## ⚙️ Highlights
 
 - 🧠 Logical and structured problem-solving
