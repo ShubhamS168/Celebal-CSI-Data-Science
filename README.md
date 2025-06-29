@@ -53,7 +53,6 @@ Celebal-CSI-Data-Science/Assignment/
  ┃ ┣ outputs/
  ┃ ┣ src/
  ┃ ┣ visualizations/
- ┃ ┣ adult.csv
  ┃ ┣ main.py
  ┃ ┣ ml_pipeline.log
  ┃ ┣ README.md
