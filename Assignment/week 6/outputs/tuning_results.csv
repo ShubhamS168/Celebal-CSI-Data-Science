@@ -1,0 +1,8 @@
+Model_Method,Best_Score,Best_Params
+XGBoost_random,0.53803774305524,"{'subsample': 0.9, 'n_estimators': 50, 'max_depth': 7, 'learning_rate': 0.2}"
+Random Forest_random,0.5282831284860581,"{'n_estimators': 50, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_depth': None, 'bootstrap': True}"
+SVM_random,0.5174817076461842,"{'kernel': 'rbf', 'gamma': 0.01, 'C': 10}"
+Logistic Regression_random,0.5081160803283188,"{'solver': 'saga', 'penalty': 'l1', 'max_iter': 1000, 'C': 100}"
+K-Nearest Neighbors_random,0.5014019155118756,"{'weights': 'distance', 'n_neighbors': 7, 'metric': 'manhattan'}"
+Decision Tree_random,0.48864824923412015,"{'min_samples_split': 5, 'min_samples_leaf': 4, 'max_depth': 10, 'criterion': 'entropy'}"
+Naive Bayes_random,0.2048577194480489,{'var_smoothing': 1e-06}
