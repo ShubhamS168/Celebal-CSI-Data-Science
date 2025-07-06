@@ -58,18 +58,10 @@ def get_model_info():
 
 def check_model_availability():
     """Check if all required model files are available"""
-    # required_files = [
-    #     'models/best_model.pkl',
-    #     'models/feature_names.pkl', 
-    #     'models/model_metadata.json'
-    # ]
-    
-    from pathlib import Path
-
     required_files = [
-        Path("models/best_model.pkl"),
-        Path("models/feature_names.pkl"),
-        Path("models/model_metadata.json")
+        'models/best_model.pkl',
+        'models/feature_names.pkl', 
+        'models/model_metadata.json'
     ]
     
     missing_files = []
