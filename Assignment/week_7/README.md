@@ -173,7 +173,7 @@ streamlit run app.py
 ## 💡 Customization Guidelines
 
 - 🔄 **Data**: Replace `data/train.csv` with your own dataset  
-- 🛠️ **Model Tuning**: Adjust `train_and_save_models.py` for Optuna ranges  
+- 🛠️ **Model Tuning**: Adjust `train_high_performance.py` for Optuna ranges  
 - 📐 **Feature Engineering**: Edit `src/feature_engineering.py` for new ideas  
 - 🎨 **UI Styling**: Customize CSS in `app.py`  
 - 🌐 **Deployment**: Upload to Streamlit Community Cloud, Heroku, or Docker  

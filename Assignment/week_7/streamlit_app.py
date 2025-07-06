@@ -94,7 +94,7 @@ try:
         
         Please run the training script first:
         ```
-        python scripts/train_and_save_models.py
+        python scripts/train_high_performance.py
         ```
         """)
 except Exception:

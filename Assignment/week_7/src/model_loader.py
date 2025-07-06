@@ -39,7 +39,7 @@ def load_trained_model():
         
         Please run the training script first:
         ```
-        python scripts/train_and_save_models.py
+        python scripts/train_high_performance.py
         ```
         """)
         return None, None, None

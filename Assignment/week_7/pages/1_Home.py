@@ -74,7 +74,7 @@ with col2:
             st.switch_page("pages/2_Prediction.py")
     else:
         st.error("❌ **Models Not Available**")
-        st.info("Run `python scripts/train_and_save_models.py` to initialise.")
+        st.info("Run `python scripts/train_high_performance.py` to initialise.")
         st.stop()
 
 # ──────────────────────────────────────────────────────────────
