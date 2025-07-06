@@ -18,7 +18,7 @@ The solution showcases:
 
 ```
 Assignment/
-└── Week 5/
+└── week 7/
     ├── .streamlit/                   # Ensure consistent and reliable app behavior across environments.
     │   └── config.toml
     ├── app.py                        # Entry point for Streamlit app
