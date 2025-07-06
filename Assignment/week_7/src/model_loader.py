@@ -5,57 +5,47 @@ Model loading utilities for production deployment
 import streamlit as st
 import joblib
 import json
-import requests
 import pandas as pd
 from pathlib import Path
 import os
 
-# --- Configuration for your model URLs ---
-MODEL_URLS = {
-    "best_model.pkl": "https://github.com/ShubhamS168/Celebal-CSI-Data-Science/blob/main/Assignment/week_7/models/best_model.pkl",
-    "feature_names.pkl": "https://github.com/ShubhamS168/Celebal-CSI-Data-Science/blob/main/Assignment/week_7/models/feature_names.pkl",
-    "model_metadata.json": "https://github.com/ShubhamS168/Celebal-CSI-Data-Science/blob/main/Assignment/week_7/models/model_metadata.json"
-}
-
-def download_file(url, destination):
-    """Downloads a file from a URL to a destination path."""
-    try:
-        with st.spinner(f"Downloading {destination.name}..."):
-            response = requests.get(url, stream=True)
-            response.raise_for_status()
-            with open(destination, "wb") as f:
-                for chunk in response.iter_content(chunk_size=8192):
-                    f.write(chunk)
-        st.success(f"✅ Downloaded {destination.name}")
-    except requests.exceptions.RequestException as e:
-        st.error(f"❌ Failed to download {destination.name}: {e}")
-        return False
-    return True
-
 @st.cache_resource
 def load_trained_model():
-    """Load the pre-trained model, downloading it if necessary."""
-    models_dir = Path("models")
-    models_dir.mkdir(exist_ok=True)
-    
-    # Check for each file and download if missing
-    for filename, url in MODEL_URLS.items():
-        local_path = models_dir / filename
-        if not local_path.exists():
-            if not download_file(url, local_path):
-                return None, None, None # Stop if download fails
-    
-    # Once all files are present, load them
+    """Load the pre-trained model and metadata with comprehensive error handling"""
     try:
-        model = joblib.load(models_dir / "best_model.pkl")
-        feature_names = joblib.load(models_dir / "feature_names.pkl")
-        with open(models_dir / "model_metadata.json", 'r') as f:
+        # Check if model files exist
+        model_path = 'models/best_model.pkl'
+        features_path = 'models/feature_names.pkl' 
+        metadata_path = 'models/model_metadata.json'
+        
+        if not all(Path(p).exists() for p in [model_path, features_path, metadata_path]):
+            return None, None, None
+        
+        # Load model
+        model = joblib.load(model_path)
+        
+        # Load feature names
+        feature_names = joblib.load(features_path)
+        
+        # Load metadata
+        with open(metadata_path, 'r') as f:
             metadata = json.load(f)
+        
         return model, feature_names, metadata
-    except Exception as e:
-        st.error(f"Error loading model files: {e}")
+    
+    except FileNotFoundError:
+        st.error("""
+        âŒ **Pre-trained model not found!**
+        
+        Please run the training script first:
+        ```
+        python scripts/train_and_save_models.py
+        ```
+        """)
         return None, None, None
-
+    except Exception as e:
+        st.error(f"Error loading model: {str(e)}")
+        return None, None, None
 
 def get_model_info():
     """Get model information for display"""
@@ -67,11 +57,27 @@ def get_model_info():
         return None
 
 def check_model_availability():
-    """Check if all required model files are available."""
-    required_files = [Path("models") / f for f in MODEL_URLS.keys()]
-    missing_files = [f.name for f in required_files if not f.exists()]
-    return len(missing_files) == 0, missing_files
+    """Check if all required model files are available"""
+    # required_files = [
+    #     'models/best_model.pkl',
+    #     'models/feature_names.pkl', 
+    #     'models/model_metadata.json'
+    # ]
+    
+    from pathlib import Path
 
+    required_files = [
+        Path("models/best_model.pkl"),
+        Path("models/feature_names.pkl"),
+        Path("models/model_metadata.json")
+    ]
+    
+    missing_files = []
+    for file_path in required_files:
+        if not Path(file_path).exists():
+            missing_files.append(file_path)
+    
+    return len(missing_files) == 0, missing_files
 
 def get_model_version():
     """Get current model version"""
