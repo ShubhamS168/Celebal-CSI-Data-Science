@@ -8,6 +8,7 @@ import json
 import pandas as pd
 from pathlib import Path
 import os
+# from src.model_loader import get_model_info
 
 @st.cache_resource
 def load_trained_model():

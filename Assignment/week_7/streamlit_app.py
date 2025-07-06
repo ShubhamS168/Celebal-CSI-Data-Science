@@ -76,9 +76,10 @@ st.markdown("""
 
 # Model status check
 try:
-    import sys, os
+    import sys
+    import os
     sys.path.append('src')
-    from model_loader import check_model_availability
+    from src.model_loader import check_model_availability
     
     models_available, missing_files = check_model_availability()
     
@@ -125,7 +126,7 @@ with st.sidebar:
     """)
     st.markdown("### 📊 Quick Stats")
     try:
-        from model_loader import get_model_info
+        from src.model_loader import get_model_info
         metadata = get_model_info()
         if metadata:
             st.metric("Model", metadata['model_name'])
