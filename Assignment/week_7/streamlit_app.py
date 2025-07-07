@@ -79,7 +79,7 @@ try:
     import sys
     import os
     sys.path.append('src')
-    from src.model_loader import check_model_availability
+    from model_loader import check_model_availability
     
     models_available, missing_files = check_model_availability()
     

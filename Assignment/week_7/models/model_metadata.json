@@ -3,7 +3,7 @@
   "test_accuracy": 0.8212290502793296,
   "cv_mean": 0.7597951344430217,
   "cv_std": 0.019431000100163753,
-  "training_date": "2025-07-06T22:35:36.133024",
+  "training_date": "2025-07-07T08:43:26.755317",
   "feature_count": 12,
   "training_samples": 712,
   "features_used": [
