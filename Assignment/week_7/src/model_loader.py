@@ -15,9 +15,9 @@ def load_trained_model():
     """Load the pre-trained model and metadata with comprehensive error handling"""
     try:
         # Check if model files exist
-        model_path = '../models/best_model.pkl'
-        features_path = '../models/feature_names.pkl' 
-        metadata_path = '../models/model_metadata.json'
+        model_path = 'week_7\models\best_model.pkl'
+        features_path = 'week_7\models\feature_names.pkl' 
+        metadata_path = 'week_7\models\model_metadata.json'
         
         if not all(Path(p).exists() for p in [model_path, features_path, metadata_path]):
             return None, None, None
@@ -51,7 +51,7 @@ def load_trained_model():
 def get_model_info():
     """Get model information for display"""
     try:
-        with open('../models/model_metadata.json', 'r') as f:
+        with open('week_7\models\model_metadata.json', 'r') as f:
             metadata = json.load(f)
         return metadata
     except Exception:
@@ -60,9 +60,9 @@ def get_model_info():
 def check_model_availability():
     """Check if all required model files are available"""
     required_files = [
-        '../models/best_model.pkl',
-        '../models/feature_names.pkl', 
-        '../models/model_metadata.json'
+        'week_7\models\best_model.pkl',
+        'week_7\models\feature_names.pkl', 
+        'week_7\models\model_metadata.json'
     ]
     
     missing_files = []

@@ -205,7 +205,7 @@ if submitted:
             # Load expected features
             try:
                 import joblib
-                expected_features = joblib.load('../models/feature_names.pkl')
+                expected_features = joblib.load('week_7\models\feature_names.pkl')
                 st.write(f"Expected features count: {len(expected_features)}")
                 
                 missing_in_processed = [f for f in expected_features if f not in processed_data.columns]
@@ -503,7 +503,7 @@ if submitted:
             # Try to diagnose the issue
             try:
                 import joblib
-                expected_features = joblib.load('../models/feature_names.pkl')
+                expected_features = joblib.load('week_7\models\feature_names.pkl')
                 processed_data = process_user_input(input_data)
                 
                 st.write("**Feature Comparison:**")

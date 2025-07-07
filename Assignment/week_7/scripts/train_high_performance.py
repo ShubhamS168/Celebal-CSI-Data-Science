@@ -180,8 +180,8 @@ def train_fixed_high_accuracy_model():
     # Save model
     os.makedirs('models', exist_ok=True)
     
-    joblib.dump(best_model, '../models/best_model.pkl')
-    joblib.dump(list(X.columns), '../models/feature_names.pkl')
+    joblib.dump(best_model, 'week_7\models\best_model.pkl')
+    joblib.dump(list(X.columns), 'week_7\models\feature_names.pkl')
     
     # Save metadata
     metadata = {
@@ -206,7 +206,7 @@ def train_fixed_high_accuracy_model():
         'version': '2.1_fixed'
     }
     
-    with open('../models/model_metadata.json', 'w') as f:
+    with open('week_7\models\model_metadata.json', 'w') as f:
         json.dump(metadata, f, indent=2)
     
     print(f"\n💾 Model saved successfully!")

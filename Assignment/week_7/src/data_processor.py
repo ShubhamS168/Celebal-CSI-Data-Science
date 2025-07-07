@@ -33,7 +33,7 @@ def process_user_input(input_data):
         
         # Load the feature names used during training
         import joblib
-        feature_names = joblib.load('../models/feature_names.pkl')
+        feature_names = joblib.load('week_7\models\feature_names.pkl')
         
         # Ensure we have all required features
         missing_features = [f for f in feature_names if f not in processed_df.columns]
@@ -218,7 +218,7 @@ def create_example_inputs():
 #         # Load the saved feature names to ensure consistency
 #         try:
 #             import joblib
-#             feature_names = joblib.load('../models/feature_names.pkl')
+#             feature_names = joblib.load('week_7\models\feature_names.pkl')
             
 #             # Filter to only include features that were used in training
 #             available_features = [col for col in feature_names if col in processed_df.columns]

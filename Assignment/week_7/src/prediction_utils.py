@@ -575,7 +575,7 @@ def get_feature_importance_enhanced(model, feature_names=None):
 def save_model(model, model_name, filepath=None):
     """Save trained model to disk"""
     if filepath is None:
-        filepath = f"../models/{model_name.replace(' ', '_').lower()}_model.pkl"
+        filepath = f"week_7\models\{model_name.replace(' ', '_').lower()}_model.pkl"
     
     try:
         joblib.dump(model, filepath)
